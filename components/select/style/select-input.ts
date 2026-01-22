@@ -180,7 +180,7 @@ const genSelectInputStyle: GenerateStyle<SelectToken> = (token) => {
             zIndex: 1,
             // Override rc-component's inline style="visibility:visible"
             // Force content-value to inherit visibility from parent with !important
-            visibility: 'inherit !important',
+            visibility: 'inherit !important' as any,
           },
 
           // >>> Input: should only take effect for not customize mode
